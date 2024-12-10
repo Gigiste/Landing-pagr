@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mia Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Benvenuto!</h1>
+        <p>La tua soluzione perfetta per [Inserisci Scopo]</p>
+        <a href="#cta" class="btn">Scopri di più</a>
+    </header>
+
+    <section id="about">
+        <h2>Chi siamo</h2>
+        <p>Descrivi il tuo prodotto, servizio o messaggio principale qui.</p>
+    </section>
+
+    <section id="features">
+        <h2>Caratteristiche</h2>
+        <ul>
+            <li>Caratteristica 1</li>
+            <li>Caratteristica 2</li>
+            <li>Caratteristica 3</li>
+        </ul>
+    </section>
+
+    <section id="cta">
+        <h2>Pronto a iniziare?</h2>
+        <a href="#" class="btn">Contattaci ora</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 La Mia Azienda. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
