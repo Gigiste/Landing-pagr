@@ -1,0 +1,58 @@
+<!--{"id":"home","titolo":"Cosa serve per partire? Kit di viaggio personalizzato in 2 minuti","descrizione":"Scegli la destinazione: documenti e permessi (solo siti ufficiali), assicurazione, eSIM o roaming, prese e soldi. Gratis, per chi parte dall’Italia.","jsonld":[{"@context":"https://schema.org","@type":"WebApplication","name":"Kit di partenza","applicationCategory":"TravelApplication","operatingSystem":"Web","inLanguage":"it","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}]}-->
+<section class="hero">
+  <h1>Cosa ti serve per partire? Scoprilo in 2 minuti.</h1>
+  <p class="sottotitolo">Documenti, permessi d’ingresso, assicurazione, internet, prese e soldi per {{N_PAESI}} destinazioni. Ti diciamo anche cosa <strong>non</strong> ti serve, così non spendi soldi per niente.</p>
+  <ul class="punti"><li>✅ Gratis, senza registrazione</li><li>✅ Solo siti ufficiali per visti e permessi</li><li>✅ Dati verificati a {{DATA_VERIFICA}}</li></ul>
+</section>
+
+<section class="riquadro" id="kit">
+  <h2>Il tuo kit di partenza</h2>
+  <form id="modulo-kit" class="modulo-kit" novalidate>
+    <div class="campo-paese">
+      <label for="paese">Dove vai?</label>
+      <select id="paese" name="paese" required><option value="">Scegli la destinazione…</option>{{OPZIONI_PAESI}}</select>
+    </div>
+    <div>
+      <label for="giorni">Quanti giorni?</label>
+      <input id="giorni" name="giorni" type="number" inputmode="numeric" min="1" max="365" value="7">
+    </div>
+    <div>
+      <label for="uso">Uso di internet</label>
+      <select id="uso" name="uso">
+        <option value="leggero">Leggero (mappe, messaggi)</option>
+        <option value="normale" selected>Normale (+ social, foto)</option>
+        <option value="intenso">Intenso (video, lavoro)</option>
+      </select>
+    </div>
+    <button class="btn" type="submit">Prepara il mio kit</button>
+  </form>
+</section>
+
+<div id="risultato-kit" aria-live="polite"></div>
+<div id="box-newsletter" class="nascosto">{{NEWSLETTER}}</div>
+
+<section>
+  <h2>Destinazioni più cercate</h2>
+  {{GRIGLIA_PAESI}}
+</section>
+
+<section class="riquadro">
+  <h2>Perché fidarsi</h2>
+  <p>Visti e permessi d’ingresso li linkiamo <strong>solo ai siti ufficiali</strong>: chi passa da un intermediario paga spesso il doppio per lo stesso modulo. Quando qualcosa non ti serve (per esempio una eSIM in Spagna, dove il roaming è già incluso) te lo diciamo.</p>
+  <p>Ci manteniamo con le commissioni di affiliazione sui servizi consigliati (assicurazioni, eSIM, tour), senza costi in più per te. <a href="/legal.html#affiliazioni">Come funziona</a>.</p>
+</section>
+
+<section>
+  <h2>Guide pratiche</h2>
+  <ul class="lista-guide">
+    <li><a href="/guide/esim-viaggio.html"><strong>eSIM per viaggiare: come funziona e quando conviene</strong><span>Quanti giga servono, quali telefoni la supportano, errori da evitare.</span></a></li>
+    <li><a href="/guide/assicurazione-viaggio.html"><strong>Assicurazione viaggio: quando serve davvero</strong><span>Cosa copre la Tessera Sanitaria, massimali giusti, esclusioni che fregano.</span></a></li>
+    <li><a href="/guide/permessi-ingresso-siti-ufficiali.html"><strong>ESTA, ETA UK, eTA Canada: i siti ufficiali</strong><span>Come riconoscere i siti intermediari che fanno pagare il doppio.</span></a></li>
+    <li><a href="/guide/pagare-estero-senza-commissioni.html"><strong>Pagare all’estero senza commissioni</strong><span>Conversione dinamica, carte multivaluta, contanti.</span></a></li>
+    <li><a href="/guide/volo-ritardo-cancellato.html"><strong>Volo in ritardo o cancellato: cosa ti spetta</strong><span>Fino a 600 € a passeggero: regole e come chiederli.</span></a></li>
+  </ul>
+</section>
+
+<script src="/assets/dati-kit.js"></script>
+<script src="/assets/logica.js"></script>
+<script src="/assets/kit.js"></script>

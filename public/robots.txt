@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /vai/
+Allow: /
+
+Sitemap: https://www.partipronto.it/sitemap.xml
